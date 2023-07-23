@@ -16,7 +16,7 @@ function App() {
 
   const getMovies = async () =>{
     
-    await fetch("https://movie-api-production-90fd.up.railway.app/api/v1/movies")
+    await fetch("https://movie-api-service.onrender.com/api/v1/movies")
     .then(response=>{
       return response.json();
     })
@@ -29,7 +29,7 @@ function App() {
 
   const getMovieData = async (movieId) => {
      
-    await fetch(`https://movie-api-production-90fd.up.railway.app/api/v1/movies/${movieId}`).then(response=>{
+    await fetch(`https://movie-api-service.onrender.com/api/v1/movies/${movieId}`).then(response=>{
       return response.json();
     }).then(singlemovi=>{
       

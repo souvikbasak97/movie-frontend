@@ -22,7 +22,7 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
 
         try
         {
-            fetch("https://movie-api-production-90fd.up.railway.app/api/v1/reviews",
+            fetch("https://movie-api-service.onrender.com/api/v1/reviews",
             {
                 method:'POST',
                 body:JSON.stringify({"reviewBody":rev.value,"imdbId":movieId}),
